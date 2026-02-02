@@ -1,0 +1,1 @@
+document.addEventListener('submit', e => { e.preventDefault(); alert('Merci ! Votre demande a été simulée.'); });

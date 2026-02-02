@@ -1,0 +1,30 @@
+
+:root{--primary:#1F6E43;--secondary:#64A873;--dark:#0F2E1C;--gray:#f5f7f6;}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#102016;background:#fff;}
+.container{width:min(1120px,92vw);margin-inline:auto;padding:24px}
+.flex{display:flex;gap:16px}.between{justify-content:space-between}.center{align-items:center}
+.grid{display:grid;gap:24px}.f2{grid-template-columns:repeat(2,1fr)}.f3{grid-template-columns:repeat(3,1fr)}.f4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.f4{grid-template-columns:repeat(2,1fr)}.f3{grid-template-columns:repeat(1,1fr)}.f2{grid-template-columns:1fr}}
+.site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid #e6ece9;z-index:10}
+.site-header .logo{font-weight:800;color:var(--primary);text-decoration:none;font-size:1.2rem}
+.site-header nav a{margin:0 8px;text-decoration:none;color:#163d2a;font-weight:600}
+.btn{background:var(--primary);color:#fff;border:none;border-radius:8px;padding:10px 14px;text-decoration:none;display:inline-block}
+.btn:hover{filter:brightness(0.95)}
+.btn-outline{background:#fff;color:var(--primary);border:1.5px solid var(--primary)}
+.hero{background:linear-gradient(180deg,#eef5f0,transparent);position:relative;overflow:hidden}
+.hero-inner{padding:72px 0;max-width:680px}
+.hero h1{font-size:2.4rem;line-height:1.15;margin:0 0 12px;color:var(--dark)}
+.lead{font-size:1.15rem;color:#2a4735;margin:0 0 24px}
+.hero-figure{position:absolute;right:-60px;bottom:-40px;width:520px;opacity:0.25}
+.value{background:var(--gray);padding:28px 0}
+.stripe{background:#fff;border-top:1px solid #e6ece9;border-bottom:1px solid #e6ece9}
+.page-header{background:var(--gray);border-bottom:1px solid #e6ece9}
+.page-header h1{margin:0 0 8px;padding-top:8px}
+.card{background:#fff;border:1px solid #e6ece9;border-radius:12px;padding:18px}
+.form label{display:block;margin:10px 0 6px;font-weight:600;color:#2a4735}
+.form input,.form textarea{width:100%;padding:10px;border:1px solid #d9e4de;border-radius:8px;font-family:inherit}
+.form textarea{min-height:120px}
+.site-footer{margin-top:40px;background:#0d2619;color:#d9efe2;padding:32px 0}
+.site-footer h4{margin:0 0 8px;color:#bfe7c8}
+.site-footer a{color:#d9efe2}
+.small{font-size:0.9rem}.muted{opacity:.8}
